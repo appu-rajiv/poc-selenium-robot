@@ -3,7 +3,7 @@ USER root
 RUN mkdir /workspace && chmod -R 777 /workspace
 WORKDIR /workspace
 RUN apt update
-RUN apt install python-pip -y
-RUN pip install robotframework robotframework-seleniumlibrary
+RUN apt install python3-pip -y
+RUN pip3 install robotframework robotframework-seleniumlibrary
 USER seluser
-CMD python -m robot -d results /workspace 
+CMD python3 -m robot -d results /workspace 

@@ -1,1 +1,1 @@
-# poc-robot-selenium
+Selenium robot to test webapp APIs

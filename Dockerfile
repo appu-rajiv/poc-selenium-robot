@@ -5,5 +5,5 @@ WORKDIR /workspace
 RUN apt update
 RUN apt install python3-pip -y
 RUN pip3 install robotframework robotframework-seleniumlibrary
-USER seluser
+USER root
 CMD python3 -m robot -d results /workspace 
